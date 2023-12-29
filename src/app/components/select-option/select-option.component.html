@@ -1,0 +1,3 @@
+<img style="width: 100px;"  [src]="srcImgPlayer" [@player]="isOpen ? 'open' : 'closed'">
+<span>VS</span>
+<img style="width: 100px;"  [src]="srcImgBot" [@bot]="isOpen ? 'open' : 'closed'" (@bot.done)="animationDone()">
